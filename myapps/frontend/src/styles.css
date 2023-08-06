@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.dotted-line {
+  border-top: 3px dotted #000;
+  width: 100%;
+}
+.dotted-line2 {
+  border-top: 1px dotted #05825b;
+  width: 100%;
+}

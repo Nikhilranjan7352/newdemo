@@ -1,0 +1,139 @@
+/* Sender */
+.bubble-sender {
+  position: relative;
+  background: #fffdee;
+  color: #000000;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: justify;
+  width: 326px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: #000000 solid 1px;
+  top: 30px;
+  left: 15%;
+  margin-bottom: 60px;
+}
+.bubble-sender:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  border-style: solid;
+  border-width: 0 20px 21px 0;
+  border-color: transparent #fffdee transparent transparent;
+  bottom: -21px;
+  left: 93%;
+  margin-left: -10px;
+}
+.bubble-sender:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  z-index: 0;
+  border-style: solid;
+  border-width: 0 21px 22px 0;
+  border-color: transparent #000000 transparent transparent;
+  bottom: -23px;
+  left: 93%;
+  margin-left: -10px;
+  display: block;
+}
+
+/* Reciever */
+.bubble-reciever {
+  position: relative;
+  background: #f9f9f9;
+  color: #000000;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: justify;
+  width: 326px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  border: #5b00a1 solid 1px;
+  top: 20px;
+  left: 5%;
+}
+.bubble-reciever:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  border-style: solid;
+  border-width: 21px 20px 0 0;
+  border-color: #f9f9f9 transparent transparent transparent;
+  bottom: -21px;
+  left: 6%;
+  margin-left: -10px;
+}
+.bubble-reciever:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  z-index: 0;
+  border-style: solid;
+  border-width: 22px 21px 0 0;
+  border-color: #5b00a1 transparent transparent transparent;
+  bottom: -23px;
+  left: 6%;
+  margin-left: -11px;
+  display: block;
+}
+
+.bubble-reciever small {
+  color: "red";
+}
+
+.mycustom {
+  position: relative;
+}
+.mycustom input[type="text"] {
+  text-indent: 60px;
+  border: none;
+  width: 100%;
+  padding: 30px;
+  border-radius: 50px;
+  border: 1px solid gray;
+  background-color: #eeeeee;
+  background-image: url("../../img/new-message-icon.png");
+  background-repeat: no-repeat;
+  background-position: 2rem 1.2rem;
+  outline: none;
+}
+
+.mycustom button[type="submit"] {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 50px;
+  padding: 26px;
+  background-color: #5b00a1;
+  border: 1px solid transparent;
+  width: 120px;
+}
+
+.mycustom #messagePin {
+  position: absolute;
+  bottom: 20px;
+  left: 19rem;
+}
+
+::placeholder {
+  color: #000000;
+}
+
+small {
+  position: absolute;
+  margin: 50px 0 0 30px;
+}
+
+small .newText {
+  position: absolute;
+  margin: 50px 0 0 30px;
+}

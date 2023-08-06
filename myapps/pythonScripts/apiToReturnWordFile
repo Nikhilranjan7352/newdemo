@@ -1,0 +1,12 @@
+from flask import Flask, jsonify, request
+
+app = Flask(__name__)
+
+@app.route('/square/<int:number>', methods=['GET'])
+def calculate_square(number):
+    square = number ** 2
+    response = {'square': square}
+    return jsonify(response)
+
+if __name__ == '__main__':
+    app.run()
